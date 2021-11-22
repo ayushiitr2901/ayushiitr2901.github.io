@@ -942,6 +942,15 @@ body{
 	color:#F5EFE1;
 }
 
+.wh_left a{
+	font-family: 'Dekko';
+	font-size: 18px;
+}
+
+.wh_left a:hover{
+	color: #99FFFF;
+}
+
 .wh_left h2{
 	margin-bottom: 7%;
 	color:#F5EFE1;
