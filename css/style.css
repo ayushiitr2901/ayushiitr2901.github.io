@@ -945,10 +945,13 @@ body{
 .wh_left a{
 	font-family: 'Dekko';
 	font-size: 18px;
+	text-decoration: underline;
+	text-decoration-color: rgba(245, 239, 225, 0.7);
 }
 
 .wh_left a:hover{
 	color: #99FFFF;
+	text-decoration: none;
 }
 
 .wh_left h2{
