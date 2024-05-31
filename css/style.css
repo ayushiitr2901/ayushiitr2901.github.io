@@ -195,30 +195,58 @@ body{
 
 /* PARTICLE HEADING */
 
+/*#particle-slider {*/
+/*  !* background-color: black; *!*/
+/*  !* position: absolute; *!*/
+
+/*  width: 100%;*/
+/*  height: 800px;*/
+/*  margin: 0;*/
+/*  !* padding-left: 200px; *!*/
+/*  !* padding-top: 200px; *!*/
+/*  overflow: hidden;*/
+
+/*  .slides, & > .dg {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+
+/*@media (min-width: 1000px) {*/
+/*  #particle-slider {*/
+/*    background-repeat: no-repeat;*/
+/*    */
+/*    & > .dg {*/
+/*      display: block;*/
+/*    }*/
+/*  }*/
+/*}*/
+
+
 #particle-slider {
-  /* background-color: black; */
-  /* position: absolute; */
+	/* background-color: black; */
+	/* position: absolute; */
 
-  width: 100%;
-  height: 800px;
-  margin: 0;
-  /* padding-left: 200px; */
-  /* padding-top: 200px; */
-  overflow: hidden;
-
-  .slides, & > .dg {
-    display: none;
-  }
+	width: 100%;
+	height: 800px;
+	margin: 0;
+	/* padding-left: 200px; */
+	/* padding-top: 200px; */
+	overflow: hidden;
 }
 
-@media (min-width: 1000px) {
-  #particle-slider {
-    background-repeat: no-repeat;
-    
-    & > .dg {
-      display: block;
-    }
-  }
+#particle-slider .slides,
+#particle-slider > .dg {
+	/*display: none;*/
+}
+
+@media (min-width: 2000px) {
+	#particle-slider {
+		background-repeat: no-repeat;
+	}
+
+	#particle-slider > .dg {
+		display: block;
+	}
 }
 
 
@@ -257,8 +285,8 @@ body{
 #circle{
 	width: 400px;
 	position: absolute;
-	left: 20%;
-	margin-top: 200px;
+	left: 22%;
+	margin-top: 220px;
 	height: 400px;
 	z-index: -10;
 	border: 1px solid #00ffe7;
@@ -281,23 +309,32 @@ body{
 	.head_hover{
 		display: none;
     }
-}
-
-#head_arrow{
-	position: absolute;
-	margin-top: 490px;
-	left: 55%;
-	transform: rotate(40deg);
-	width: 90px;
+	.positions{
+		width: auto;
+	}
 }
 
 .positions{
 	position: absolute;
-	margin-top: 490px;
-	left: 65%;
+	margin-top: 500px;
+	left: 60%;
+	display: flex;
+	justify-content: space-between;
+	width: 420px;
 }
-.positions h3{
+
+.positions .positions_headings {
 	color: #F5EFE1;
+}
+
+.positions .positions_arrow {
+	transform: rotate(40deg);
+	width: fit-content;
+	height: fit-content;
+}
+
+#head_arrow{
+	width: 90px;
 }
 
 .date{
@@ -369,7 +406,7 @@ body{
 	text-decoration: none;
 	position: absolute;
 	/* z-index: 100px; */
-	margin-top: 112px;
+	margin-top: 84px;
 	/* left: 40%; */
 	font-weight: bold;
 	font-family: Monument Extended;
